@@ -540,9 +540,17 @@ console.log(fees);
  * Task-5: Sort the listing array ascendingly in a new variable called listingAscendingly
  */
 //WRITE YOUR CODE BELOW
-const listingAscendingly = (listings.sort((a, b) => a - b));
+//const listingAscendingly = (listings.slice().sort((a, b) => a - b));
 
-console.log(listingAscendingly);
+
+const listingAscendingly = listings
+  .slice()
+  .sort((a, b) => a.id - b.id);
+
+
+//does work but to visualize you need to specify what index of the array you want to see
+//console.log(listingAscendingly);
+
 //console.log(arr.sort((a, b) => b - a)); //descending
 //console.log(arr.sort((a, b) => a - b)); //ascending
 
