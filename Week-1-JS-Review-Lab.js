@@ -562,15 +562,11 @@ console.log(listingAscendingly[0]);
  * Name the variable newBuiltListings
  */
 //WRITE YOUR CODE BELOW
+//filters by the year as show the second and other listings arent stored as they are not built within the required year
+const newBuiltListings = listings.filter((a) => a.propertySummary.builtIn >= 1990);
+console.log(newBuiltListings[4]);
+
+//displays each listing to confirm the correct ones are displayed and stored
+//newBuiltListings.forEach((listings) => console.log(listings));
 
 
-//const newBuiltListings = listings.filter((a) => a.builtIn >= 1990);
-//console.log(newBuiltListings);
-
-
-/*
-const newBuiltListings = listings.filter((listings) =>
-  propertySummary.builtIn >= "1990"    
-);
-console.log(newBuiltListings);
-*/
